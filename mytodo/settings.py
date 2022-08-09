@@ -11,7 +11,7 @@ DEBUG = True
 
 SECRET_KEY = env('secret_key')
 
-ALLOWED_HOSTS = ['*']#'.herokuapp.com', '127.0.0.1'
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -23,7 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django_filters',
     'todo',
 ]
 
