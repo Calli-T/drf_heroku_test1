@@ -15,6 +15,7 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+    ptvsd.enable_attach(address=('0.0.0.0', 5000))    
     execute_from_command_line(sys.argv)
 
 
